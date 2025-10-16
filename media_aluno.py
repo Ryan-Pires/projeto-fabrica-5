@@ -8,8 +8,11 @@ nota4 = float(input("digite a quarta nota: "))
 media = (nota1 + nota2 + nota3 + nota4) / 4
 
 if media >= 7.0:
-    print("você foi aprovado✅")
+    if media >= 10.1:
+        print(f"valor invalido❌")
+    else:
+        print(F"você foi aprovado✅ com {media: .2f} de média")
 
 else:
-    print("você foi reprovado❌")
+    print(f"você foi reprovado❌")
 
